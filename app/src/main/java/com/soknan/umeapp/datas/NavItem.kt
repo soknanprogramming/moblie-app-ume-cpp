@@ -1,4 +1,4 @@
-package com.soknan.umeapp
+package com.soknan.umeapp.datas
 
 data class NavItem(
     val title: String,

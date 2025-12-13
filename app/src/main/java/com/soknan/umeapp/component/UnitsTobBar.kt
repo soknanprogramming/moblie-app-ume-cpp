@@ -3,6 +3,7 @@ package com.soknan.umeapp.component
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBackIosNew
 import androidx.compose.material.icons.filled.Home
@@ -24,7 +25,7 @@ import com.soknan.umeapp.ui.theme.Orange
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun UnitsTobBar(title: String){
+fun UnitsTobBar(title: String, onPress: () -> Unit){
     TopAppBar(
         title = {
             Text(
@@ -38,7 +39,8 @@ fun UnitsTobBar(title: String){
                 contentDescription = "Back",
                 modifier = Modifier
                     .padding(8.dp)
-                    .clickable() {  }
+                    .clickable() { onPress() }
+                    .size(50.dp)
             )
         },
         colors = TopAppBarDefaults.topAppBarColors(
@@ -50,5 +52,5 @@ fun UnitsTobBar(title: String){
 @Preview
 @Composable
 fun TopBarPreview(){
-    UnitsTobBar("C++ Get Started")
+    UnitsTobBar("C++ Get Started", { })
 }
