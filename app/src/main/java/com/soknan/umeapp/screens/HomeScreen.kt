@@ -37,34 +37,32 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.soknan.umeapp.datas.NavItem
-import com.soknan.umeapp.datas.Screen
 import com.soknan.umeapp.ui.theme.Orange
 
 val navItems = listOf(
     NavItem("C++ Get Started", Screen.CppGetStarted.route),
-    NavItem("C++ Syntax", "cpp_syntax"),
-    NavItem("C++ Output", "cpp_output"),
-    NavItem("C++ Comments", "cpp_comments"),
-    NavItem("C++ Variables", "cpp_variables"),
-    NavItem("C++ User Input", "cpp_user_input"),
-    NavItem("C++ Data Types", "cpp_data_types"),
-    NavItem("C++ Operators", "cpp_operators"),
-    NavItem("C++ Strings", "cpp_strings"),
-    NavItem("C++ Math", "cpp_math"),
-    NavItem("C++ Booleans", "cpp_booleans"),
-    NavItem("C++ If...Else", "cpp_if_else"),
-    NavItem("C++ Switch", "cpp_switch"),
-    NavItem("C++ While Loop", "cpp_while_loop"),
-    NavItem("C++ For Loop", "cpp_for_loop"),
-    NavItem("C++ Break/Continue", "cpp_break_continue"),
-    NavItem("C++ Arrays", "cpp_arrays"),
-    NavItem("C++ Structures", "cpp_structures"),
-    NavItem("C++ Enums", "cpp_enums"),
-    NavItem("C++ References", "cpp_references"),
-    NavItem("C++ Pointers", "cpp_pointers"),
-    NavItem("C++ Memory Management", "cpp_memory_management")
+    NavItem("C++ Syntax", Screen.CppSyntax.route),
+    NavItem("C++ Output", Screen.CppOutput.route),
+    NavItem("C++ Comments", Screen.CppComments.route),
+    NavItem("C++ Variables", Screen.CppVariables.route),
+    NavItem("C++ User Input", Screen.CppUserInput.route),
+    NavItem("C++ Data Types", Screen.CppDataTypes.route),
+    NavItem("C++ Operators", Screen.CppOperators.route),
+    NavItem("C++ Strings", Screen.CppStrings.route),
+    NavItem("C++ Math", Screen.CppMath.route),
+    NavItem("C++ Booleans", Screen.CppBooleans.route),
+    NavItem("C++ If...Else", Screen.CppIfElse.route),
+    NavItem("C++ Switch", Screen.CppSwitch.route),
+    NavItem("C++ While Loop", Screen.CppWhileLoop.route),
+    NavItem("C++ For Loop", Screen.CppForLoop.route),
+    NavItem("C++ Break/Continue", Screen.CppBreakContinue.route),
+    NavItem("C++ Arrays", Screen.CppArrays.route),
+    NavItem("C++ Structures", Screen.CppStructures.route),
+    NavItem("C++ Enums", Screen.CppEnums.route),
+    NavItem("C++ References", Screen.CppReferences.route),
+    NavItem("C++ Pointers", Screen.CppPointers.route),
+    NavItem("C++ Memory Management", Screen.CppMemoryManagement.route)
 )
-
 
 
 

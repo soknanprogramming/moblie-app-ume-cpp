@@ -1,6 +1,25 @@
-package com.soknan.umeapp.datas
-
-sealed class Screen(val route: String){
-    object Home: Screen("home")
-    object CppGetStarted: Screen("cpp_get_started")
+sealed class Screen(val route: String) {
+    object Home : Screen("home")
+    object CppGetStarted : Screen("cpp_get_started")
+    object CppSyntax : Screen("cpp_syntax")
+    object CppOutput : Screen("cpp_output")
+    object CppComments : Screen("cpp_comments")
+    object CppVariables : Screen("cpp_variables")
+    object CppUserInput : Screen("cpp_user_input")
+    object CppDataTypes : Screen("cpp_data_types")
+    object CppOperators : Screen("cpp_operators")
+    object CppStrings : Screen("cpp_strings")
+    object CppMath : Screen("cpp_math")
+    object CppBooleans : Screen("cpp_booleans")
+    object CppIfElse : Screen("cpp_if_else")
+    object CppSwitch : Screen("cpp_switch")
+    object CppWhileLoop : Screen("cpp_while_loop")
+    object CppForLoop : Screen("cpp_for_loop")
+    object CppBreakContinue : Screen("cpp_break_continue")
+    object CppArrays : Screen("cpp_arrays")
+    object CppStructures : Screen("cpp_structures")
+    object CppEnums : Screen("cpp_enums")
+    object CppReferences : Screen("cpp_references")
+    object CppPointers : Screen("cpp_pointers")
+    object CppMemoryManagement : Screen("cpp_memory_management")
 }
