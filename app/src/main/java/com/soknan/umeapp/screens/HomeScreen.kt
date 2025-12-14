@@ -38,6 +38,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.soknan.umeapp.datas.NavItem
 import com.soknan.umeapp.ui.theme.Orange
+import androidx.core.net.toUri
 
 val navItems = listOf(
     NavItem("C++ Get Started", Screen.CppGetStarted.route),
@@ -87,7 +88,7 @@ fun HomeScreen(navController :NavHostController){
                                 .padding(5.dp)
                                 .size(48.dp)
                                 .clickable {
-                                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.umekratie.edu.kh/"))
+                                    val intent = Intent(Intent.ACTION_VIEW, "http://www.umekratie.edu.kh/".toUri())
                                     context.startActivity(intent)
                                 }
                         )
@@ -116,6 +117,9 @@ fun HomeScreen(navController :NavHostController){
         ) {
             items(navItems) { navItem ->
                 TapUnit(unitName = navItem.title, onPress = { navController.navigate(navItem.route) })
+            }
+            item {
+                Spacer(modifier = Modifier.height(8.dp))
             }
         }
 
@@ -147,7 +151,7 @@ fun TapUnit(unitName: String, onPress: () -> Unit) {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = false)
 @Composable
 fun PreviewHomeScreen() {
     val navController = rememberNavController()
